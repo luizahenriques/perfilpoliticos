@@ -21,7 +21,7 @@ Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como
 
 ### Resumo
 
-
+Este trabalho visa criar uma ferramenta inovadora para que a sociedade acompanhe as atividades dos políticos brasileiros pós-eleições e início das atividades nos cargos. Utilizando uma API para coletar notícias políticas do site G1 (https://g1.globo.com/politica) desde dezembro de 2023, a ferramenta emprega a biblioteca spaCy para identificar políticos nas reportagens. Também incorpora dados da API da Câmara dos Deputados sobre os legisladores das últimas duas legislaturas. Utilizando um modelo pré-treinado baseado em BERT, disponível (bert-base-portuguese-cased-assin2-similarity), a ferramenta calcula scores de similaridade, filtrando com um ponto de corte para garantir precisão. A API da OpenAI, com o GPT, é utilizada para sumarizar notícias, extrair palavras-chave e compreender o envolvimento do político nas notícias. Os resultados são apresentados em um painel no Power BI, tornando as informações acessíveis. Este trabalho representa uma contribuição significativa para o acompanhamento transparente e participativo das atividades políticas, oferecendo à sociedade uma visão mais detalhada e crítica do cenário político brasileiro.
 
 ### Abstract <!-- Opcional! Caso não aplicável, remover esta seção -->
 
