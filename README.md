@@ -42,7 +42,16 @@ A seguir tem-se a relação dos steps percorridos na codificação, para atingir
 2) Captura de Entidades Nomeadas: Para este passo, foi necessário utilizar a técnica conhecida como NER - Named Entity Recognition. Para tal, o Spacy foi a biblioteca escolhida. Além de reconhecer entidades e visando ser mais preciso nas buscas, foram filtradas apenas rotulações de pessoas (=PER) nas notícias. O resultado obtido foi uma lista com os nomes citados em cada uma das notícias. Vale ressaltar que não necessariamente esses nomes são os nomes dos políticos.
 3) Similaridade de texto usando BERT: A avaliação da similaridade textual foi necessária para filtrar adequadamente os nomes já identificados na etapa anterior e compará-los com a base de dados de nomes dos políticos para os quais é almejado realizar a busca. Essa base de políticos de referência pode ser expandida conforme a necessidade. Para o trabalho aqui apresentado, restringiu-se aos Deputados Federais. A lista destes foi obtida e incorporada ao código usando uma API com dados atualizados, fornecida pela Camara Legislativa Brasileira. O limiar de similaridade estabelecido na busca foi ligeiramente inferior ao ponto considerado como correspondência completa. Essa decisão foi tomada visando a uma abordagem mais abrangente, permitindo ao usuário final, durante as análises no Relatório em Power BI, a autonomia para escolher o intervalo desejado para o score de similaridade.
 
-Estes 3 primeiros steps podem ser observados no código disponível nesse arquivo: [Extração Notícias G1 NER e Similaridade](2024_01_19ExtraçãoNotíciasG1SpicyIncremental.ipynb)
+Estes 3 primeiros steps podem ser observados no código disponível nesse arquivo: [Extração Notícias G1 NER e Similaridade](2024_01_19ExtraçãoNotíciasG1SpicyIncremental.ipynb).
+
+4) Identificação de Ações e Verbos associados às entidades: Com a intenção de testar dois modelos de processamento de linguagem natural no trabalho, a identificação de ações e verbos relacionados aos políticos obtidos dentro do score de similaridade foi realizada usando GPT, através da API disponibilizada pela Open AI. O desafio desta etapa se resumiu a entender como utilizar a API, considerando que a necessidade em si de captação de ação pode ser informada para o modelo usando linguagem natural. Por certo, os inputs "personalidade" e "descrição" da notícia foram disponibilizadas ao prompt através de variáveis visando a automatização da elaboração das perguntas.
+O código desta etapa está disponível aqui: [Obtenção Ação Deputado](Deputados_AçãodoDeputado.ipynb)
+
+5) Keywords e Sumarização: Etapa trazida pro modelo com o intuito de agregar informações e facilidade de busca ao usuário. Para esta etapa, também foi utilizado o GPT e os inputs foram disponibilizados ao modelo através do prompt criado em linguagem natural com especificações precisas em relação ao objetivo da tarefa.
+Os códigos estão disponíveis aqui: [Obtenção Keywords](Deputados_keywords.ipynb) e [Obtenção Sumarização](Deputados_SumarizarNoticias2.ipynb).
+
+6) Criação do modelo analítico e construção do relatório em Power BI: Além de todos os conteúdos disponibilizados pelos modelos de linguagem citados nas etapadas anteriores, o relatório analítico final contou com atributos dimensionais relativos aos Deputados Federais. Estes dados foram obtidos também da base de dados aberta do Co
+
 
 
 
