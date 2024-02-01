@@ -52,7 +52,7 @@ Os códigos estão disponíveis aqui: [Obtenção Keywords](Deputados_keywords.i
 
 6) Criação do modelo analítico e construção do relatório em Power BI: Além de todos os conteúdos disponibilizados pelos modelos de linguagem citados nas etapadas anteriores, o relatório analítico final contou com atributos dimensionais relativos aos Deputados Federais. Estes dados foram obtidos também da base de dados aberta da Camara e, por este motivo, possuia chave de ligação com todas as tabelas geradas nos processos acima. Estes dados complementam a análise, trazendo dados como UF do Deputado, URL da foto e Partido. Para preparar os dados da análise, parte do tratamento dos dados foi realizado via python e o código está disponível aqui: [Código ETL](ETLNoticiasEmpilhadas.ipynb)
 
-O encadeamento dos códigos e uma visão geral do modelo pode ser observada na imagem a seguir: [Encadeamento de Códigos] (EncadeamentoCodigos.pdf)
+O encadeamento dos códigos e uma visão geral do modelo pode ser observada na imagem a seguir: ![Encadeamento de Códigos] (EncadeamentoCodigos.pdf)
 
 
 
