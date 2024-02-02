@@ -54,13 +54,9 @@ Os códigos estão disponíveis aqui: [Obtenção Keywords](Deputados_keywords.i
 
 O encadeamento dos códigos e uma visão geral do modelo pode ser observada na imagem a seguir:[Encadeamento de Códigos](EncadeamentoCodigos.pdf) 
 
-
-
 ### 3. Resultados
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisl vestibulum tortor fringilla, eget imperdiet neque condimentum. Proin vitae augue in nulla vehicula porttitor sit amet quis sapien. Nam rutrum mollis ligula, et semper justo maximus accumsan. Integer scelerisque egestas arcu, ac laoreet odio aliquet at. Sed sed bibendum dolor. Vestibulum commodo sodales erat, ut placerat nulla vulputate eu. In hac habitasse platea dictumst. Cras interdum bibendum sapien a vehicula.
-
-Proin feugiat nulla sem. Phasellus consequat tellus a ex aliquet, quis convallis turpis blandit. Quisque auctor condimentum justo vitae pulvinar. Donec in dictum purus. Vivamus vitae aliquam ligula, at suscipit ipsum. Quisque in dolor auctor tortor facilisis maximus. Donec dapibus leo sed tincidunt aliquam.
+Os resultados da aplicação dos modelos e das diferentes tarefas podem ser observados no [painel em Power BI](Foto_Painel.png).
 
 ### 4. Conclusões
 
